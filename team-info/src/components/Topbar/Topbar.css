@@ -1,0 +1,13 @@
+.Topbar {
+  background-color: rgb(28, 28, 66);
+  background-image: url("../../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  color: #fff;
+  padding-top: 25vh;
+}
+.Topbar img {
+  width: 100%;
+}

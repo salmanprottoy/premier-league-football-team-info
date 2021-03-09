@@ -2,8 +2,9 @@ import React from "react";
 import "./Team.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const Team = (props) => {
-  const { strTeam, strSport, strTeamBadge } = props.team;
+  const { strTeam, strSport, strTeamBadge, idTeam } = props.team;
   console.log(props);
   return (
     <div>
@@ -11,9 +12,13 @@ const Team = (props) => {
         <div className="card h-100 shadow bg-white p-5 rounded border-0 m-4">
           <img className="card-img" src={strTeamBadge} alt="" />
           <div class="card-body">
-            <h2 className="card-title">{strTeam}</h2>
+            <h1 className="card-title">{strTeam}</h1>
             <p className="card-text">Sports type: {strSport}</p>
-            <button className="btn btn-primary">Explore <FontAwesomeIcon icon={faArrowRight} /> </button>
+            <Link to={`/team/${idTeam}`}>
+              <button className="btn btn-primary">
+                Explore <FontAwesomeIcon icon={faArrowRight} />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

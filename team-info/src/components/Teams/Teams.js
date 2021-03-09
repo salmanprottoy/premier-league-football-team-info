@@ -11,7 +11,7 @@ const Teams = () => {
     },[])
     return (
         <div className="Teams-div">
-            <div className="row row-cols-md-3 g-3 justify-content-center mt-2">
+            <div className="row row-cols-md-3 g-4 justify-content-center mt-2">
                 {
                     teamsInfo.map((team) => <Team team={team}></Team>)
                 }

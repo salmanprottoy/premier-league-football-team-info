@@ -4,7 +4,7 @@ import Topbar from "../Topbar/Topbar";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <Topbar />
       <Teams />
     </div>
