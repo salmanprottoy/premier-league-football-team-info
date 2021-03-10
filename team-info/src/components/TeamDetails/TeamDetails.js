@@ -39,7 +39,7 @@ const TeamDetails = () => {
   } = teamInfo;
   return (
     <div className="teamDetails">
-      <Topbar></Topbar>
+      <Topbar strTeamBadge={strTeamBadge}></Topbar>
       <div className="container">
         <div className="bg-primary rounded m-5">
           <div className="p-5 text-white">

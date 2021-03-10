@@ -1,9 +1,16 @@
 import React from 'react';
 import './Topbar.css'
-const Topbar = () => {
+const Topbar = (props) => {
+    console.log(props)
+    
     return (
         <div className="Topbar">
-            <h1>Football Club Team Info</h1>
+            {
+                props.title && <h1>Football Club Team Info</h1> 
+            }
+            {
+                props.strTeamBadge && <img src={props.strTeamBadge} alt=""/>
+            }
         </div>
     );
 };
