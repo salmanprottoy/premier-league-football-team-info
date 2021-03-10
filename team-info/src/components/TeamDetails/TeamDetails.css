@@ -1,0 +1,19 @@
+.iconBtn {
+  border-radius: 50%;
+}
+.btn-info {
+  background-color: #1da1f2;
+  background-color: #1da1f2;
+}
+.btn-info:hover {
+  background-color: #1da0f2b4;
+  background-color: #1da0f2b4;
+}
+.btn-primary {
+  background-color: #3e5c9a;
+  border-color: #3e5c9a;
+}
+.btn-primary:hover {
+  border-color: #3e5d9ab4;
+  background-color: #3e5d9ab4;
+}
