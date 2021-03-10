@@ -25,7 +25,6 @@ const TeamDetails = () => {
       .then((response) => response.json())
       .then((data) => setTeamInfo(data.teams[0]));
   }, [teamId]);
-  console.log(teamInfo);
   const {
     strTeamBadge,
     strTeam,

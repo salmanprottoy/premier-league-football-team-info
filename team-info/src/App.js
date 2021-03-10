@@ -18,7 +18,7 @@ function App() {
             <Home />
           </Route>
           <Route path="/team/:teamId">
-            <TeamDetails/>
+            <TeamDetails />
           </Route>
           <Route path="/about">
             <About />
