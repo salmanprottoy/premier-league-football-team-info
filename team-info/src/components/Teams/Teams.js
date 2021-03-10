@@ -10,8 +10,8 @@ const Teams = () => {
         .then(data => setTeamsInfo(data.teams))
     },[])
     return (
-        <div className="Teams-div">
-            <div className="row row-cols-md-3 g-4 justify-content-center mt-2">
+        <div className="Teams-div ml-5 mr-5">
+            <div className="row row-cols-md-3 g-3 justify-content-center mt-2">
                 {
                     teamsInfo.map((team) => <Team team={team}></Team>)
                 }
