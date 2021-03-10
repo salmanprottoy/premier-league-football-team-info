@@ -15,6 +15,7 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import FooterInfo from "../FooterInfo/FooterInfo";
 
 const TeamDetails = () => {
   const { teamId } = useParams();
@@ -37,10 +38,10 @@ const TeamDetails = () => {
     strStadiumDescription,
   } = teamInfo;
   return (
-    <div className="teamDetails">
+    <div>
       <Topbar strTeamBadge={strTeamBadge}></Topbar>
       <div className="container">
-        <div className="bg-primary rounded m-5">
+        <div className="teamDetails rounded m-5">
           <div className="p-5 text-white">
             <h2>{strTeam}</h2>
             <h5>
