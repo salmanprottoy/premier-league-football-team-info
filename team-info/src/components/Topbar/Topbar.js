@@ -6,7 +6,7 @@ const Topbar = (props) => {
     return (
         <div className="Topbar">
             {
-                props.title && <h1>Football Club Team Info</h1> 
+                props.title && <h1>Premier League Football Team Info</h1> 
             }
             {
                 props.strTeamBadge && <img src={props.strTeamBadge} alt=""/>
