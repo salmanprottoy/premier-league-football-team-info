@@ -8,8 +8,8 @@ const Team = (props) => {
   return (
     <div>
       <div className="col">
-        <div className="card text-center h-100 shadow bg-white p-5 rounded border-0 m-4">
-          <img className="card-img img-fluid" src={strTeamBadge} alt="" />
+        <div className="card text-center h-100 shadow bg-white g-3 p-3 rounded border-0 m-5" style={{ width: '23rem' }} >
+          <img className="center" src={strTeamBadge} style={{ width: '10rem'}} alt="" />
           <div class="card-body">
             <h1 className="card-title">{strTeam}</h1>
             <p className="card-text">Sports type: {strSport}</p>
