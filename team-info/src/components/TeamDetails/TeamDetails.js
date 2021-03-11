@@ -15,7 +15,7 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import FooterInfo from "../FooterInfo/FooterInfo";
+import female from "../../img/female.png";
 
 const TeamDetails = () => {
   const { teamId } = useParams();
@@ -34,9 +34,13 @@ const TeamDetails = () => {
     strGender,
     strSport,
     strDescriptionEN,
-    strTeamFanart3,
     strStadiumDescription,
+    strTeamFanart3,
+    strTwitter,
+    strFacebook,
+    strYoutube,
   } = teamInfo;
+
   return (
     <div>
       <Topbar strTeamBadge={strTeamBadge}></Topbar>
@@ -70,7 +74,16 @@ const TeamDetails = () => {
             </h5>
           </div>
           <div className="p-5">
-            <img src={strTeamFanart3} className="rounded" alt="" width="100%" />
+            {strGender === "Male" ? (
+              <img
+                src={strTeamFanart3}
+                className="rounded"
+                alt=""
+                width="100%"
+              />
+            ) : (
+              <img src={female} className="rounded" alt="" width="100%" />
+            )}
           </div>
         </div>
         <div>
@@ -84,17 +97,32 @@ const TeamDetails = () => {
         <div className="d-flex justify-content-center text-white p-3">
           <div className="m-2">
             <button className="btn btn-info iconBtn">
-              <FontAwesomeIcon icon={faTwitter} />
+              <a
+                className="media-link text-white"
+                href={`https://${strTwitter}`}
+              >
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
             </button>
           </div>
           <div className="m-2">
             <button className="btn btn-primary iconBtn">
-              <FontAwesomeIcon icon={faFacebook} />
+              <a
+                className="media-link text-white"
+                href={`https://${strFacebook}`}
+              >
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
             </button>
           </div>
           <div className="m-2">
             <button className="btn btn-danger iconBtn">
-              <FontAwesomeIcon icon={faYoutube} />
+              <a
+                className="media-link text-white"
+                href={`https://${strYoutube}`}
+              >
+                <FontAwesomeIcon icon={faYoutube} />
+              </a>
             </button>
           </div>
         </div>

@@ -13,7 +13,7 @@ const Teams = () => {
     <div className="Teams-div ml-5 mr-5">
       <div className="row row-cols-md-3 g-3 justify-content-center mt-2">
         {teamsInfo.map((team) => (
-          <Team team={team}></Team>
+          <Team team={team} key={team.idTeam} ></Team>
         ))}
       </div>
     </div>

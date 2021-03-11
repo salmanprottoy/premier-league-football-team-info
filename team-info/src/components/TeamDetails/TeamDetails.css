@@ -1,6 +1,9 @@
 .teamDetails{
   background-color:rgba(76, 144, 207, 0.911);
 }
+.media-link:visited{
+  color:white;
+}
 .iconBtn {
   border-radius: 50%;
 }

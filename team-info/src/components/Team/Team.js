@@ -5,7 +5,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 const Team = (props) => {
   const { strTeam, strSport, strTeamBadge, idTeam } = props.team;
-  console.log(props.team)
   return (
     <div>
       <div className="col">
