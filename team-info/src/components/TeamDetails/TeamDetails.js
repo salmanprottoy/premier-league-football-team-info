@@ -47,7 +47,7 @@ const TeamDetails = () => {
       <div className="container">
         <div className="teamDetails rounded m-5">
           <div className="p-5 text-white">
-            <h2>{strTeam}</h2>
+            <h1>{strTeam}</h1>
             <h5>
               {" "}
               <small>
