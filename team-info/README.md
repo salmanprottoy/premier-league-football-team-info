@@ -1,4 +1,4 @@
-# Premier League Football Team Info ✨
+# Premier League Football Team Info 
 
 A react project where all the team in the English Premier League Football can be readily represented.
 
@@ -7,7 +7,7 @@ A react project where all the team in the English Premier League Football can be
 
 [Premier League Football Team Info](https://premier-league-team-info.netlify.app/)
 
-### Features ✔
+## Features ✔
 
 - #### Can see all teams
 
@@ -15,4 +15,4 @@ A react project where all the team in the English Premier League Football can be
 - #### Can see team information
 
 
-###
+##
