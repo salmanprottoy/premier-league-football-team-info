@@ -45,9 +45,9 @@ const TeamDetails = () => {
     <div>
       <Topbar strTeamBadge={strTeamBadge}></Topbar>
       <div className="container">
-        <div className="teamDetails rounded m-5">
-          <div className="p-5 text-white">
-            <h1>{strTeam}</h1>
+        <div className="teamDetails row d-flex justify-content-between align-items-center m-5 rounded">
+          <div className="p-4 text-white col-md-6 text-left">
+            <h1 className="g-3" >{strTeam}</h1>
             <h5>
               {" "}
               <small>
@@ -73,7 +73,7 @@ const TeamDetails = () => {
               </small>
             </h5>
           </div>
-          <div className="p-5">
+          <div className="p-4 col-md-6">
             {strGender === "Male" ? (
               <img
                 src={strTeamFanart3}
